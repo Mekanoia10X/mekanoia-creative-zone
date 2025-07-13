@@ -1,47 +1,23 @@
 
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mekanoia</title>
 
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
   <style>
-    /* ESTILOS PARA LOS BOTONES PRINCIPALES */
-
-    .botones-principales {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-      margin: 40px 0;
-    }
-
-    .boton {
-      background-color: #f78da7;  /* color suave pero vibrante */
-      color: #ffffff;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      font-family: 'Arial Rounded MT Bold', sans-serif;
-      transition: transform 0.3s, background-color 0.3s;
-    }
-
-    .boton:hover {
-      background-color: #f55587;
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@6
-
     body {
       font-family: 'Poppins', sans-serif;
       background-color: black;
-      color: #F5EBDD; /* champagne beige */
+      color: #F5EBDD;
       animation: fadeIn 2s ease-in;
       background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+      margin: 0;
+      padding: 0;
     }
 
     @keyframes fadeIn {
@@ -51,7 +27,7 @@
 
     h1, h2 {
       font-family: 'Playfair Display', serif;
-      color: #E0C097; /* soft neutral gold */
+      color: #E0C097;
     }
 
     header {
@@ -88,34 +64,31 @@
       font-size: 0.9em;
     }
 
+    /* Botones */
     .button {
       display: inline-block;
       margin: 10px;
       padding: 12px 24px;
       border-radius: 30px;
       font-weight: bold;
-      color: white;
       text-decoration: none;
       transition: all 0.3s ease;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
     }
 
-    .btn-quotes { background: linear-gradient(45deg, #6a11cb, #2575fc); }
-    .btn-aha { background: linear-gradient(45deg, #ff6a00, #ee0979); }
-    .btn-inspiracion { background: linear-gradient(45deg, #56ab2f, #a8e063); }
-    .btn-creaciones { background: linear-gradient(45deg, #f7971e, #ffd200); color: black; }
-    .btn-recomendados { background: linear-gradient(45deg, #fc5c7d, #6a82fb); }
-    .btn-cafe { background: linear-gradient(45deg, #f4e4d5, #ffe9d2); color: #D4AF37; }
+    .btn-quotes       { background: linear-gradient(45deg, #6a11cb, #2575fc); color: white; }
+    .btn-aha          { background: linear-gradient(45deg, #ff6a00, #ee0979); color: white; }
+    .btn-inspiracion  { background: linear-gradient(45deg, #56ab2f, #a8e063); color: white; }
+    .btn-creaciones   { background: linear-gradient(45deg, #f7971e, #ffd200); color: black; }
+    .btn-recomendados { background: linear-gradient(45deg, #fc5c7d, #6a82fb); color: white; }
+    .btn-cafe         { background: linear-gradient(45deg, #f4e4d5, #ffe9d2); color: #D4AF37; }
 
     .button:hover {
       transform: scale(1.05);
       opacity: 0.9;
     }
 
-    .music iframe {
-      margin-top: 20px;
-      border-radius: 12px;
-    }
-
+    /* Cita destacada */
     .quote-box {
       max-width: 700px;
       margin: 20px auto;
@@ -134,8 +107,15 @@
       text-align: right;
       color: #D4AF37;
     }
+
+    /* Playlist */
+    .music iframe {
+      margin-top: 20px;
+      border-radius: 12px;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <img src="logo-mekanoia.png" alt="Logo Mekanoia" />
@@ -144,25 +124,24 @@
   </header>
 
   <main>
-    <!-- ✨ Quote destacada al inicio -->
+    <!-- ✨ Quote destacada -->
     <div class="quote-box">
       “The Amazing Art of Becoming”
       <div class="quote-author">— Mekanoia</div>
     </div>
 
+    <!-- Botones -->
     <div>
       <a class="button btn-quotes" href="quotes.html">Quotes</a>
       <a class="button btn-aha" href="aha.html">AHA! Moments</a>
-      <a href="inspiracion.html" class="boton">Inspiración</a>
+      <a class="button btn-inspiracion" href="inspiracion.html">Inspiración</a>
       <a class="button btn-creaciones" href="#creaciones">Nuestras Creaciones</a>
       <a class="button btn-recomendados" href="#recomendados">Nuestros Recomendados</a>
       <a class="button btn-cafe" href="https://www.buymeacoffee.com/tuusuario" target="_blank">Invítame un café ☕</a>
     </div>
 
-    
+    <!-- Secciones -->
     <section id="aha">
-
-      
       <h2>AHA! Moments</h2>
       <p>Momentos reveladores & transformadores.</p>
     </section>
@@ -184,8 +163,11 @@
 
     <section class="music">
       <h2>Playlist Mekanoia ✨</h2>
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj" 
-        title="YouTube Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      <iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj"
+        title="YouTube Playlist" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
       </iframe>
     </section>
   </main>
@@ -194,4 +176,4 @@
     <p>© 2025 Mekanoia. Todos los derechos reservados.</p>
   </footer>
 </body>
-</html>            
+</html>
