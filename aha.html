@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AHA! Moments – Mekanoia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #000;
+      color: #fff8f0;
+      background-image: url('https://www.transparenttextures.com/patterns/foggy-birds.png');
+      padding: 30px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .aha-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .aha-card {
+      background: rgba(255, 255, 255, 0.06);
+      border-left: 4px solid #ffd700;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .aha-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+    }
+
+    .aha-text {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      color: #fff1dc;
+    }
+
+    .aha-source {
+      font-size: 0.9em;
+      color: #ffa;
+      text-align: right;
+    }
+
+    .back-button {
+      display: block;
+      margin: 40px auto 0;
+      background: linear-gradient(45deg, #ffe9d2, #f4e4d5);
+      color: #000;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      width: fit-content;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h1>AHA! Moments 💡</h1>
+
+  <div class="aha-container">
+    <div class="aha-card">
+      <p class="aha-text">"No necesito estar lista para comenzar. Comenzar me hará estar lista."</p>
+      <p class="aha-source">– Insight personal</p>
+    </div>
+
+    <div class="aha-card">
+      <p class="aha-text">"Cuando dejo de resistir, aparece la claridad."</p>
+      <p class="aha-source">– Diario de transformación</p>
+    </div>
+
+    <div class="aha-card">
+      <p class="aha-text">"No se trata de perfección, se trata de conexión."</p>
+      <p class="aha-source">– Brene Brown</p>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-button">← Volver a Mekanoia</a>
+</body>
+</html>
