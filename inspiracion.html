@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inspiración - Mekanoia</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #0e0e0e;
+      color: #f5e5c0;
+      font-family: 'Georgia', serif;
+      background-image: url('https://www.transparenttextures.com/patterns/french-stucco.png');
+    }
+
+    h1 {
+      color: #fddf96;
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .inspiracion-grid {
+      display: grid;
+      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 30px;
+    }
+
+    .inspiracion-item {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .inspiracion-item:hover {
+      transform: scale(1.02);
+    }
+
+    .inspiracion-item img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .inspiracion-item a {
+      color: #fddf96;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .inspiracion-item blockquote {
+      font-style: italic;
+      color: #f5e5c0;
+      border-left: 3px solid #fddf96;
+      padding-left: 10px;
+    }
+
+    .volver {
+      margin-top: 40px;
+      display: inline-block;
+      background-color: #fddf96;
+      color: #0e0e0e;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .volver:hover {
+      background-color: #f9e3af;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Inspiración 🌟</h1>
+  <p>Arte, paisajes, palabras, personas, creaciones & experiencias que nos inspiran a co-crear.</p>
+
+  <div class="inspiracion-grid">
+    <!-- Imagen -->
+    <div class="inspiracion-item">
+      <img src="https://source.unsplash.com/600x400/?nature,light" alt="Inspiración visual" />
+      <p>La luz de la naturaleza nos recuerda nuestro brillo interior.</p>
+    </div>
+
+    <!-- Enlace -->
+    <div class="inspiracion-item">
+      <a href="https://www.ted.com/talks/elizabeth_gilbert_your_elusive_creative_genius" target="_blank">
+        🌐 Ver TED Talk: Elusivo Genio Creativo
+      </a>
+    </div>
+
+    <!-- Video -->
+    <div class="inspiracion-item">
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/Yl9TVbAal5s" title="Inspiración en video" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Documento -->
+    <div class="inspiracion-item">
+      <a href="https://www.dropbox.com/s/tu-archivo.pdf?dl=0" target="_blank">📄 Leer documento: Manifiesto Creativo</a>
+    </div>
+
+    <!-- Música -->
+    <div class="inspiracion-item">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2QZ7WLBE8h2y1Y5Fb8RYbH?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <!-- Escrito corto -->
+    <div class="inspiracion-item">
+      <blockquote>
+        "No siempre tienes que empujar. A veces, solo necesitas dejar que la energía creativa te abrace." – Mekanoia
+      </blockquote>
+    </div>
+  </div>
+
+  <a class="volver" href="index.html">← Volver a inicio</a>
+
+</body>
+</html>
