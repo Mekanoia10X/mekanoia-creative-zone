@@ -4,83 +4,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quotes - Mekanoia</title>
+  <title>Quotes – Mekanoia</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background-color: black;
-      color: #F5EBDD;
-      padding: 40px 20px;
-      text-align: center;
+      color: #F5EBDD; /* champagne beige */
       background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+      animation: fadeIn 1.5s ease;
+      padding: 30px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
-      color: #E0C097;
+      color: #E0C097; /* soft gold */
+      text-align: center;
+      margin-bottom: 40px;
       font-size: 2.5em;
-      margin-bottom: 30px;
     }
 
-    .quote-box {
-      max-width: 700px;
-      margin: 20px auto;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 25px;
-      border-radius: 20px;
-      border-left: 4px solid #E0C097;
+    .quote {
+      font-size: 1.4em;
+      margin-bottom: 40px;
+      text-align: center;
       font-style: italic;
-      font-size: 1.2em;
       line-height: 1.6;
     }
 
-    .quote-author {
+    .author {
+      display: block;
       margin-top: 10px;
       font-weight: bold;
-      text-align: right;
-      color: #D4AF37;
+      font-size: 1em;
     }
 
-    a.back {
-      display: inline-block;
-      margin-top: 40px;
+    .back-button {
+      display: block;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .back-button a {
       text-decoration: none;
-      color: #E0C097;
-      border: 1px solid #E0C097;
-      padding: 10px 20px;
+      background: linear-gradient(45deg, #f4e4d5, #ffe9d2);
+      color: #D4AF37;
+      padding: 12px 24px;
       border-radius: 30px;
+      font-weight: bold;
       transition: all 0.3s ease;
     }
 
-    a.back:hover {
-      background-color: #E0C097;
-      color: black;
+    .back-button a:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
+  <h1>Frases que Inspiran</h1>
 
-  <h1>Frases que Transforman</h1>
-
-  <div class="quote-box">
-    “Lo visible nace de lo invisible. Cultiva tu mundo interior y verás florecer lo que te rodea.”
-    <div class="quote-author">— Mekanoia</div>
+  <div class="quote">
+    “Somos creadores de nuestra propia realidad. ¡Que sea una feliz!”
+    <span class="author">– Mekanoia</span>
   </div>
 
-  <div class="quote-box">
-    “Be who you really are, not who the world trained you to be.”
-    <div class="quote-author">— Mekanoia</div>
+  <div class="quote">
+    “La creatividad es la inteligencia divirtiéndose.”
+    <span class="author">– Albert Einstein</span>
   </div>
 
-  <div class="quote-box">
-    “Cada creación auténtica es un acto de libertad interior.”
-    <div class="quote-author">— Mekanoia</div>
+  <div class="quote">
+    “No hay nada en una oruga que te diga que se convertirá en mariposa.”
+    <span class="author">– R. Buckminster Fuller</span>
   </div>
 
-  <a class="back" href="index.html">← Volver a la página principal</a>
+  <div class="quote">
+    “Hazlo con alma, con amor, con intención. Así todo tiene sentido.”
+    <span class="author">– Mekanoia</span>
+  </div>
 
+  <div class="quote">
+    “Donde hay inspiración, hay transformación.”
+    <span class="author">– Mekanoia</span>
+  </div>
+
+  <div class="back-button">
+    <a href="index.html">← Volver a Mekanoia</a>
+  </div>
 </body>
 </html>
