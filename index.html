@@ -2,35 +2,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mekanoia Creative Zone</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body style="margin: 0; font-family: sans-serif; background-color: black; color: white;">
-
-  <header style="background-color: black; text-align: center; padding: 30px;">
-    <img src="logo-mekanoia.png" alt="Logo Mekanoia" style="max-width: 150px; margin-bottom: 15px;">
-    <h1 style="margin: 0; font-size: 2em;">Bienvenidos a Mekanoia Creative Zone</h1>
-    <p style="margin-top: 10px; font-size: 1.2em;">Un espacio para co-crear, inspirarse y disfrutar.</p>
+<body>
+  <header class="hero">
+    <img src="logo-mekanoia.png" alt="Logo Mekanoia" class="logo"/>
+    <h1>Bienvenidos a Mekanoia Creative Zone</h1>
+    <p>Un espacio para co-crear, inspirarse y disfrutar.</p>
   </header>
 
-  <main style="padding: 30px; text-align: center;">
+  <main>
     <section>
       <h2>¿Qué encontrarás aquí?</h2>
-      <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+      <ul class="section-list">
         <li>🎧 Música para acompañarte</li>
-        <li>📚 Recomendaciones y lecturas</li>
+        <li>💬 Quotes que inspiran</li>
+        <li>💡 Aha! Moments</li>
+        <li>✨ Inspiración creativa</li>
         <li>🛍️ Productos y servicios que inspiran</li>
-        <li>☕ Invítame a un café</li>
-        <li>🔗 Enlaces a nuestras plataformas</li>
       </ul>
+    </section>
+
+    <section class="coffee-section">
+      <a href="https://www.buymeacoffee.com/mekanoia" target="_blank" class="coffee-button">☕ Invítame un café</a>
+    </section>
+
+    <section class="media-section">
+      <h2>Música para el alma 🎵</h2>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </section>
   </main>
 
-  <footer style="text-align: center; padding: 20px; font-size: 0.9em;">
+  <footer>
     <p>© 2025 Mekanoia. Todos los derechos reservados.</p>
   </footer>
-
 </body>
 </html>
