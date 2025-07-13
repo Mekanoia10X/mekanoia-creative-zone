@@ -5,15 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mekanoia Creative Zone</title>
+
+  <!-- Fuentes Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: black;
-      color: white;
+      color: #F5EBDD; /* Champagne beige */
     }
 
     h1, h2 {
+      font-family: 'Playfair Display', serif;
       color: #D4AF37; /* Soft gold */
     }
 
@@ -49,18 +54,24 @@
 
     .button {
       display: inline-block;
-      margin: 10px;
+      margin: 10px 10px;
       padding: 12px 20px;
-      background-color: #D4AF37;
-      color: black;
+      color: white;
       font-weight: bold;
       text-decoration: none;
       border-radius: 25px;
       transition: all 0.3s ease;
     }
 
+    .btn-quotes { background-color: #e91e63; }        /* Fucsia */
+    .btn-aha { background-color: #2ecc71; }            /* Verde esmeralda */
+    .btn-inspiracion { background-color: #3498db; }    /* Azul profundo */
+    .btn-creaciones { background-color: #D4AF37; color: black; } /* Soft gold */
+    .btn-recomendados { background-color: #9c27b0; }   /* Morado brillante */
+    .btn-cafe { background-color: #f4e4d5; color: #D4AF37; } /* Blush sand + gold */
+
     .button:hover {
-      background-color: #fff8e1;
+      opacity: 0.85;
       transform: scale(1.05);
     }
 
@@ -74,7 +85,7 @@
   <header>
     <img src="logo-mekanoia.png" alt="Logo Mekanoia" />
     <h1>Bienvenidos a Mekanoia Creative Zone</h1>
-    <p>Un espacio para co-crear, inspirarse y disfrutar.</p>
+    <p style="font-size: 1.2em;">Un espacio para co-crear, inspirarse y disfrutar.</p>
   </header>
 
   <main>
@@ -88,14 +99,14 @@
         <li>🔗 Enlaces a nuestras plataformas</li>
       </ul>
 
-      <!-- Botones de navegación -->
+      <!-- Botones -->
       <div>
-        <a class="button" href="#">Quotes</a>
-        <a class="button" href="#">AHA! Moments</a>
-        <a class="button" href="#">Inspiración</a>
-        <a class="button" href="#">Nuestras Creaciones</a>
-        <a class="button" href="#">Nuestros Recomendados</a>
-        <a class="button" href="https://www.buymeacoffee.com/tuusuario" target="_blank">Invítame un café ☕</a>
+        <a class="button btn-quotes" href="#">Quotes</a>
+        <a class="button btn-aha" href="#">AHA! Moments</a>
+        <a class="button btn-inspiracion" href="#">Inspiración</a>
+        <a class="button btn-creaciones" href="#">Nuestras Creaciones</a>
+        <a class="button btn-recomendados" href="#">Nuestros Recomendados</a>
+        <a class="button btn-cafe" href="https://www.buymeacoffee.com/tuusuario" target="_blank">Invítame un café ☕</a>
       </div>
 
       <!-- Playlist -->
@@ -113,4 +124,4 @@
   </footer>
 
 </body>
-</html>        
+</html>
