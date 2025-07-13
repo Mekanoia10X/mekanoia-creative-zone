@@ -3,27 +3,39 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mekanoia Creative Zone</title>
 
-  <!-- Fuentes Google -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Poppins', sans-serif;
       background-color: black;
-      color: #F5EBDD; /* Champagne beige */
+      color: #F5EBDD; /* champagne beige */
+      animation: fadeIn 2s ease-in;
+      background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     h1, h2 {
       font-family: 'Playfair Display', serif;
-      color: #D4AF37; /* Soft gold */
+      color: #E0C097; /* soft neutral gold */
     }
 
     header {
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.85);
       text-align: center;
       padding: 30px;
     }
@@ -31,6 +43,12 @@
     header img {
       max-width: 150px;
       margin-bottom: 15px;
+      animation: zoomIn 1.5s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
     }
 
     main {
@@ -38,15 +56,13 @@
       text-align: center;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1em;
+    section {
+      margin-bottom: 50px;
     }
 
     footer {
-      background-color: #f4e4d5; /* blush sand */
-      color: #D4AF37; /* soft gold */
+      background-color: #f4e4d5;
+      color: #D4AF37;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
@@ -54,34 +70,34 @@
 
     .button {
       display: inline-block;
-      margin: 10px 10px;
-      padding: 12px 20px;
-      color: white;
+      margin: 10px;
+      padding: 12px 24px;
+      border-radius: 30px;
       font-weight: bold;
+      color: white;
       text-decoration: none;
-      border-radius: 25px;
       transition: all 0.3s ease;
     }
 
-    .btn-quotes { background-color: #e91e63; }        /* Fucsia */
-    .btn-aha { background-color: #2ecc71; }            /* Verde esmeralda */
-    .btn-inspiracion { background-color: #3498db; }    /* Azul profundo */
-    .btn-creaciones { background-color: #D4AF37; color: black; } /* Soft gold */
-    .btn-recomendados { background-color: #9c27b0; }   /* Morado brillante */
-    .btn-cafe { background-color: #f4e4d5; color: #D4AF37; } /* Blush sand + gold */
+    .btn-quotes { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+    .btn-aha { background: linear-gradient(45deg, #ff6a00, #ee0979); }
+    .btn-inspiracion { background: linear-gradient(45deg, #56ab2f, #a8e063); }
+    .btn-creaciones { background: linear-gradient(45deg, #f7971e, #ffd200); color: black; }
+    .btn-recomendados { background: linear-gradient(45deg, #fc5c7d, #6a82fb); }
+    .btn-cafe { background: linear-gradient(45deg, #f4e4d5, #ffe9d2); color: #D4AF37; }
 
     .button:hover {
-      opacity: 0.85;
       transform: scale(1.05);
+      opacity: 0.9;
     }
 
-    .music {
-      margin: 40px 0;
+    .music iframe {
+      margin-top: 20px;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <img src="logo-mekanoia.png" alt="Logo Mekanoia" />
     <h1>Bienvenidos a Mekanoia Creative Zone</h1>
@@ -89,39 +105,50 @@
   </header>
 
   <main>
-    <section>
-      <h2>¿Qué encontrarás aquí?</h2>
-      <ul>
-        <li>🎧 Música para acompañarte</li>
-        <li>📚 Recomendaciones y lecturas</li>
-        <li>🛍️ Productos y servicios que inspiran</li>
-        <li>☕ Invítame a un café</li>
-        <li>🔗 Enlaces a nuestras plataformas</li>
-      </ul>
+    <div>
+      <a class="button btn-quotes" href="#quotes">Quotes</a>
+      <a class="button btn-aha" href="#aha">AHA! Moments</a>
+      <a class="button btn-inspiracion" href="#inspiracion">Inspiración</a>
+      <a class="button btn-creaciones" href="#creaciones">Nuestras Creaciones</a>
+      <a class="button btn-recomendados" href="#recomendados">Nuestros Recomendados</a>
+      <a class="button btn-cafe" href="https://www.buymeacoffee.com/tuusuario" target="_blank">Invítame un café ☕</a>
+    </div>
 
-      <!-- Botones -->
-      <div>
-        <a class="button btn-quotes" href="#">Quotes</a>
-        <a class="button btn-aha" href="#">AHA! Moments</a>
-        <a class="button btn-inspiracion" href="#">Inspiración</a>
-        <a class="button btn-creaciones" href="#">Nuestras Creaciones</a>
-        <a class="button btn-recomendados" href="#">Nuestros Recomendados</a>
-        <a class="button btn-cafe" href="https://www.buymeacoffee.com/tuusuario" target="_blank">Invítame un café ☕</a>
-      </div>
+    <section id="quotes">
+      <h2>Quotes</h2>
+      <p>"Sé tú el cambio que quieres ver en el mundo." – Gandhi</p>
+    </section>
 
-      <!-- Playlist -->
-      <div class="music">
-        <h2>Playlist Mekanoia ✨</h2>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj" 
-        title="YouTube Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      </div>
+    <section id="aha">
+      <h2>AHA! Moments</h2>
+      <p>Historias reales de descubrimientos transformadores.</p>
+    </section>
+
+    <section id="inspiracion">
+      <h2>Inspiración</h2>
+      <p>Arte, paisajes, palabras, personas y experiencias que despiertan el alma.</p>
+    </section>
+
+    <section id="creaciones">
+      <h2>Nuestras Creaciones</h2>
+      <p>Productos únicos de arte, diseño y sostenibilidad hechos con alma.</p>
+    </section>
+
+    <section id="recomendados">
+      <h2>Nuestros Recomendados</h2>
+      <p>Libros, podcasts, películas, personas, proyectos que valen oro.</p>
+    </section>
+
+    <section class="music">
+      <h2>Playlist Mekanoia ✨</h2>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj" 
+        title="YouTube Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
     </section>
   </main>
 
   <footer>
     <p>© 2025 Mekanoia. Todos los derechos reservados.</p>
   </footer>
-
 </body>
 </html>
