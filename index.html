@@ -1,43 +1,80 @@
 
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mekanoia Creative Zone</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+    }h1, h2 {
+  color: #d4af37; /* Soft gold */
+}
+
+footer {
+  background-color: #f6e9da; /* Blush sand */
+  color: #d4af37; /* Soft gold */
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d4af37;
+  color: black;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  margin-top: 20px;
+}
+
+  </style>
 </head>
-<body>
-  <header class="hero">
-    <img src="logo-mekanoia.png" alt="Logo Mekanoia" class="logo"/>
+<body>  <header style="background-color: black; text-align: center; padding: 30px;">
+    <img src="logo-mekanoia.png" alt="Logo Mekanoia" style="max-width: 150px; margin-bottom: 15px;">
     <h1>Bienvenidos a Mekanoia Creative Zone</h1>
     <p>Un espacio para co-crear, inspirarse y disfrutar.</p>
-  </header>
-
-  <main>
+  </header>  <main style="padding: 30px; text-align: center;">
     <section>
       <h2>¿Qué encontrarás aquí?</h2>
-      <ul class="section-list">
+      <ul style="list-style: none; padding: 0; font-size: 1.1em;">
         <li>🎧 Música para acompañarte</li>
-        <li>💬 Quotes que inspiran</li>
-        <li>💡 Aha! Moments</li>
-        <li>✨ Inspiración creativa</li>
+        <li>📚 Recomendaciones y lecturas</li>
         <li>🛍️ Productos y servicios que inspiran</li>
-      </ul>
-    </section>
+        <li>☕ Invítame a un café</li>
+        <li>🔗 Enlaces a nuestras plataformas</li>
+      </ul><!-- Botones de navegación -->
+  <div>
+    <a href="#quotes" class="button">Quotes</a>
+    <a href="#aha" class="button">AHA! Moments</a>
+    <a href="#inspiracion" class="button">Inspiración</a>
+    <a href="#creaciones" class="button">Nuestras Creaciones</a>
+    <a href="#recomendados" class="button">Nuestros Recomendados</a>
+    <a href="https://www.buymeacoffee.com/" target="_blank" class="button">☕ Invítame un café</a>
+  </div>
 
-    <section class="coffee-section">
-      <a href="https://www.buymeacoffee.com/mekanoia" target="_blank" class="coffee-button">☕ Invítame un café</a>
-    </section>
+  <!-- Playlist temporal -->
+  <h2 style="margin-top: 40px;">Playlist Inspiración Mekanoia</h2>
+  <iframe src="https://www.youtube.com/embed/videoseries?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI" allowfullscreen></iframe>
+</section>
 
-    <section class="media-section">
-      <h2>Música para el alma 🎵</h2>
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </section>
-  </main>
-
-  <footer>
+  </main>  <footer style="text-align: center; padding: 20px; font-size: 0.9em;">
     <p>© 2025 Mekanoia. Todos los derechos reservados.</p>
-  </footer>
-</body>
+  </footer></body>
 </html>
