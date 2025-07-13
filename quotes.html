@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quotes – Mekanoia</title>
-
+  <title>Frases que Inspiran – Mekanoia</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
-
   <style>
     * {
       margin: 0;
@@ -17,11 +15,11 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: black;
-      color: #F5EBDD; /* champagne beige */
+      background-color: #000;
+      color: #F5EBDD;
       background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
-      animation: fadeIn 1.5s ease;
       padding: 30px;
+      animation: fadeIn 2s ease-in;
     }
 
     @keyframes fadeIn {
@@ -31,79 +29,95 @@
 
     h1 {
       font-family: 'Playfair Display', serif;
-      color: #E0C097; /* soft gold */
+      color: #E0C097;
       text-align: center;
       margin-bottom: 40px;
-      font-size: 2.5em;
     }
 
-    .quote {
-      font-size: 1.4em;
-      margin-bottom: 40px;
-      text-align: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .quote-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #E0C097;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .quote-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(224, 192, 151, 0.3);
+    }
+
+    .quote-text {
+      font-size: 1.1em;
       font-style: italic;
-      line-height: 1.6;
+      margin-bottom: 10px;
+      color: #ffe9d2;
     }
 
-    .author {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-      font-size: 1em;
+    .quote-author {
+      text-align: right;
+      font-size: 0.9em;
+      color: #D4AF37;
     }
 
     .back-button {
       display: block;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .back-button a {
-      text-decoration: none;
+      margin: 40px auto 0;
       background: linear-gradient(45deg, #f4e4d5, #ffe9d2);
       color: #D4AF37;
       padding: 12px 24px;
+      border: none;
       border-radius: 30px;
       font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      width: fit-content;
       transition: all 0.3s ease;
     }
 
-    .back-button a:hover {
+    .back-button:hover {
       transform: scale(1.05);
       opacity: 0.9;
     }
+
   </style>
 </head>
 <body>
-  <h1>Frases que Inspiran</h1>
+  <h1>Frases que Inspiran ✨</h1>
 
-  <div class="quote">
-    “Somos creadores de nuestra propia realidad. ¡Que sea una feliz!”
-    <span class="author">– Mekanoia</span>
+  <div class="grid">
+    <div class="quote-card">
+      <p class="quote-text">"Somos creadores de nuestra propia realidad. ¡Que sea una feliz!"</p>
+      <p class="quote-author">– Mekanoia</p>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">"El arte no es un espejo para reflejar la realidad, sino un martillo para darle forma."</p>
+      <p class="quote-author">– Bertolt Brecht</p>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">"La transformación no es un futuro ideal. Es una forma de estar plenamente presente."</p>
+      <p class="quote-author">– Tara Brach</p>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">"Hazlo con alma, hazlo con amor, hazlo con intención."</p>
+      <p class="quote-author">– Meraki Spirit</p>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">"Todo lo que tocas, lo transformas. Todo lo que transformas, te transforma a ti."</p>
+      <p class="quote-author">– Octavia E. Butler</p>
+    </div>
   </div>
 
-  <div class="quote">
-    “La creatividad es la inteligencia divirtiéndose.”
-    <span class="author">– Albert Einstein</span>
-  </div>
-
-  <div class="quote">
-    “No hay nada en una oruga que te diga que se convertirá en mariposa.”
-    <span class="author">– R. Buckminster Fuller</span>
-  </div>
-
-  <div class="quote">
-    “Hazlo con alma, con amor, con intención. Así todo tiene sentido.”
-    <span class="author">– Mekanoia</span>
-  </div>
-
-  <div class="quote">
-    “Donde hay inspiración, hay transformación.”
-    <span class="author">– Mekanoia</span>
-  </div>
-
-  <div class="back-button">
-    <a href="index.html">← Volver a Mekanoia</a>
-  </div>
+  <a href="index.html" class="back-button">← Volver a Mekanoia</a>
 </body>
 </html>
